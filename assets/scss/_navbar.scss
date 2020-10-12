@@ -1,0 +1,44 @@
+ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    padding: 40px 100px; 
+    z-index: 10;
+
+    li {
+        display: none;
+        list-style: none;
+
+        &:hover {
+
+            a {
+                font-size: 1.5em;
+                color: #ff0057;
+            }
+        }
+
+        a {
+            text-align: center;
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2px;
+            transition: 0.5s;
+        }
+     }
+}
+
+.sticky {
+    background: black;
+    position: fixed;
+    top: 0;
+    height: 80px;
+}
+
+.active {
+    font-size: 1.5em;
+    color: #ff0057;
+}
